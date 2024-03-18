@@ -1,0 +1,185 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: sans-serif;
+}
+body{
+background-color: gray;
+height: 100vh;
+display: flex;
+justify-content: center;
+}
+
+.wrapper{
+max-width: 1440px;
+width: 100%;
+height: auto;
+background-color: #fff;
+padding: 0 120px;
+position: relative;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 54px 0;
+gap: 60px;
+}
+
+.logo>p{
+color: #363853;
+font-size: 33px;
+
+}
+
+.logo>p::first-letter{
+    color:sandybrown;
+}
+
+.links{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 68px;
+
+}
+
+.links>a{
+color: #363853;
+font-size: 18px;
+transition: 0,5s;
+}
+
+
+.links>a:hover{
+color: sandybrown;
+
+}
+
+.sign_up{
+display: flex;
+align-items: center;
+gap: 60px;
+
+}
+
+.sign_up>button{
+border: none;
+width: 120px;
+height: 50px;
+color: #fff;
+font-size: 18px;
+border-radius: 10px;
+background-color:sandybrown;
+}
+
+/* ------------------------sec1------------------------------- */
+.section1{
+    display: flex;
+    align-items: center;
+
+}
+.left{
+    width: 530px;
+display: flex;
+flex-direction: column;
+align-items: start;
+
+}
+.left>p{
+font-size: 66px;
+color: #363853;
+font-weight: 700;
+}
+.left>p>span{
+color:#FF7A50;
+
+}
+
+.left>span{
+margin: 24px 0 44px 0;
+font-size: 20px;
+color:#3D3D3D;
+
+}
+
+.expore{
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+.expore :nth-child(1){
+    width: 163px;
+    height: 50px;
+    background-color: sandybrown;
+    color:#fff;
+    font-size: 18px;
+    border: none;
+    border-radius:8px;
+}
+
+.expore :nth-child(2){
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.right>img{
+
+    width: 689px;
+height: 681px;
+
+
+}
+
+#burger{
+position: absolute;
+top: 414.33px;
+right: 120px;
+}
+
+#kontakt{
+position: absolute;
+top: 274.76px;
+left: 794.79px;
+}
+
+#strela{
+    position: absolute;
+top: 202.73px;
+right: 175px;
+}
+
+#soat{
+    position: absolute;
+top: 215px;
+right: 210px;
+}
+
+#siniy{
+position: absolute;
+top: 186.7px;
+left: 850px;
+}
+#vsiniy{
+    position: absolute;
+    top: 189px;
+    left: 850px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
