@@ -36,18 +36,18 @@ const data = [
 ];
 
 
-function addcard(id){
-  alert(id)
+function addcard(index){
+  alert(index)
 }
 
 
-   data.map((item)=>{
+   data.map((item,index)=>{
     prroducs.innerHTML +=`
     <div class="card">
     <img src="${item.img}">
     <p>${item.name}</p>
     <span>$${item.price}</span>
-    <button onclick="addcard(${item.id})"  >Add to Cart</button>
+    <button onclick="addcard(${index})"  >Add to Cart</button>
     </div>
     
     `;
