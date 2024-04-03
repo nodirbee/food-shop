@@ -280,15 +280,40 @@ letter-spacing: 0%;
 text-align: left;
 }
 
+/* ------------------------openbasket start------------------ */
 
 
+.openbasketmodal{
+width: 70%;
+height: 400px;
+background-color: papayawhip;
+position: absolute;
+left: 210px;
+z-index: 45;
+top: 130px;
+transform: translateY(-600px);
+transition: 0.5s;
+overflow: auto;
+}
 
 
+table{
+width: 100%;
 
+}
 
+.basketbox{
+    display: flex;
+align-items: center;
+justify-content: start;
+padding: 20px;
+gap: 180px;
 
-
-
+}
+.basketbox>img{
+width: 50px;
+height: 50px;
+}
 
 
 

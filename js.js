@@ -1,6 +1,6 @@
-const prroducs = document.querySelector('.prroducs')
-
-
+const prroducs = document.querySelector('.prroducs');
+const openbasket = document.querySelector('#openbasket') ;
+const openbasketmodal = document.querySelector('.openbasketmodal');
 
 const data = [
   {
@@ -35,14 +35,17 @@ const data = [
   },
 ];
 
+const basket = JSON.parse(localStorage.getItem('banan')) || []
 
-function addcard(index){
-  alert(index)
+function addcard(index) {
+  basket.push(data[index])
+  localStorage.setItem('banan', JSON.stringify(basket))
+
 }
 
 
-   data.map((item,index)=>{
-    prroducs.innerHTML +=`
+data.map((item, index) => {
+  prroducs.innerHTML += `
     <div class="card">
     <img src="${item.img}">
     <p>${item.name}</p>
@@ -51,7 +54,71 @@ function addcard(index){
     </div>
     
     `;
-   });
+});
+
+let son = 0;
+
+openbasket.addEventListener("click", function (){
+  son++;
+
+if(son%2===0){
+  openbasketmodal.style.transform = "translateY(0px)";
+}
+else{
+  openbasketmodal.style.transform = "translateY(-600px)";
+}
+});
+
+
+
+// open modal boxga olkaldagi get qilip chiqarish
+
+
+basket.map((item)=>{
+
+openbasketmodal.innerHTML+=`
+
+<div class="basketbox">
+<span>${item.id}</span>
+<img src="${item.img}" alt="">
+<p>${item.nami}</p>
+<p>${item.price}</p>
+<div>
+    <button>x</button>
+</div>
+
+</div>
+
+`;
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
