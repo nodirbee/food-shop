@@ -282,7 +282,7 @@ text-align: left;
 
 /* ------------------------openbasket start------------------ */
 
-
+ 
 .openbasketmodal{
 width: 70%;
 height: 400px;
@@ -299,8 +299,45 @@ overflow: auto;
 
 table{
 width: 100%;
+padding: 5px;
+}
+
+th{
+color: #fff;
 
 }
+
+td{
+    color:#fff;
+    text-align: center;
+}
+td>img{
+width: 50px;
+height: 50px;
+}
+
+#count-controller > button{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: green;
+border:none;
+color: #fff;
+font-size: 20px;
+margin: 0 5px;
+cursor: pointer;
+}
+
+
+#del{
+width: 40px;
+height: 40px;
+border:none;   
+background-color:brown;
+border-radius: 8px;
+cursor: pointer;
+}
+
 
 .basketbox{
     display: flex;
@@ -317,8 +354,10 @@ height: 50px;
 
 
 
+#openbasket{
+    cursor: pointer;
 
-
+}
 
 
 
